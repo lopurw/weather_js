@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-container">
+        <div class="weather-card">
+            <div class="location">
+                <div class="select-container">
+                    <select class="country-select" disabled>
+                        <option value="Belarus">Беларусь</option>
+                    </select>
+                </div>
+                <div class="select-container">
+                    <select class="city-select">
+                        <option value="Minsk" selected>Минск</option>
+                        <option value="Brest">Брест</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="current-weather">
+                <h1 class="temperature">+20°C</h1>
+            </div>
+            <button class="more-info-btn">Дополнительная информация</button>
+            <div class="more-info">
+                
+                <div class="info-item">
+                    <div class="info-title">Направление ветра:</div>
+                    <div class="info-value" id="wind-direction"></div>
+                </div>
+                <div class="info-item">
+                    <div class="info-title">Скорость ветра:</div>
+                    <div class="info-value" id="wind-speed"></div>
+                </div>
+                <div class="info-item">
+                    <div class="info-title">Порывы ветра:</div>
+                    <div class="info-value" id="wind-gusts"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

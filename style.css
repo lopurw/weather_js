@@ -1,0 +1,115 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.weather-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-card {
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.weather-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.location {
+    margin-bottom: 20px;
+}
+
+.select-container {
+    display: inline-block;
+    position: relative;
+}
+
+.select-container select {
+    appearance: none;
+    background-color: #e0e0e0;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.select-container::after {
+    /* content: '.'; */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.current-weather {
+    margin-top: 30px;
+}
+
+.temperature {
+    font-size: 72px;
+    margin: 0;
+    color: #333;
+}
+
+.description {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.more-info-btn {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.more-info-btn:hover {
+    background-color: #ff8533;
+}
+
+.more-info {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.more-info p {
+    margin: 5px 0;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-title {
+    font-weight: bold;
+    width: 90%;
+    font-size: 14px;
+}
+
+.info-value {
+    width: 50%;
+    text-align: right;
+}
